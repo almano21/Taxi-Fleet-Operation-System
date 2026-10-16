@@ -19,7 +19,7 @@ The system also supports online payments using registered client profiles with l
 
 The Software Requirements Specification (SRS) is available here:
 
-[View SRS](docs/SRS.docx) 
+[View SRS](docs/SRS-R2.docx) 
 
 Open the file and click View raw to view/download the document.
 
