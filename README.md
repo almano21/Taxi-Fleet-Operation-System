@@ -24,3 +24,13 @@ The Software Requirements Specification (SRS) is available here:
 Open the file and click View raw to view/download the document.
 
 [View the flowchart](docs/ScenarioFlowchart-R2.pdf)
+
+## Release 2 Test Evidence
+
+Section 3.8.2 of the [SRS](docs/SRS-R2_Updated.docx) contains
+a summary of the executed tests and representative console output.
+
+The complete console logs are available separately:
+
+- [E1 — Booking, payment, cancellation and reporting tests](docs/TUDENGITAKSO_R2_Test_Evidence_2026-10-21.txt)
+- [E2 — Driver selection and fleet administration tests](docs/TUDENGITAKSO_R2_Fleet_Test_Evidence_2026-10-21.txt)
