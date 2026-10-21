@@ -23,7 +23,7 @@ The Software Requirements Specification (SRS) is available here:
 
 Open the file and click View raw to view/download the document.
 
-[View the flowchart](docs/ScenarioFlowchart-R2.pdf)
+[View the flowchart](docs/ScenarioFlowchart-R2_Updated.pdf)
 
 ## Release 2 Test Evidence
 
