@@ -1,0 +1,674 @@
+
+---- TUDENGITAKSO ----
+1. Create an account
+2. Link a bank card
+3. Order a taxi
+4. Manage current trip
+5. View daily fleet report
+6. Fleet administration
+0. Exit
+Choose an option: 1
+Enter the 12 digits between S and M (first digit 1-9): 123456789221
+Enter your phone number: 372 followed by 8 digits: 37212345678
+Registration successful! Choose option 2 to link your bank card.
+Registered student ID: S123456789221M
+
+---- TUDENGITAKSO ----
+1. Create an account
+2. Link a bank card
+3. Order a taxi
+4. Manage current trip
+5. View daily fleet report
+6. Fleet administration
+0. Exit
+Choose an option: 2
+Enter 1 to link a demo bank card or 0 to cancel: 1
+Enter a fictional 16-digit card number: 1234567890123456
+Enter the expiry month (1-12): 2
+Enter the expiry year (2026-2036): 2028
+Demo card ending in 3456 linked successfully!
+Demo expiry: 02/2028
+
+---- TUDENGITAKSO ----
+1. Create an account
+2. Link a bank card
+3. Order a taxi
+4. Manage current trip
+5. View daily fleet report
+6. Fleet administration
+0. Exit
+Choose an option: 6
+Administrator login required.
+Enter admin ID: 100200300
+Enter admin password: 4471
+
+--- FLEET ADMINISTRATION ---
+1. View driver status
+2. Change driver status
+0. Return to main menu
+Choose an option: 2
+Enter driver ID (1 = Karl, 2 = Gustavo): 1
+Enter new status (1 = Free, 2 = Busy/en route, 3 = Unavailable): 1
+Karl now has status 1.
+
+---- TUDENGITAKSO ----
+1. Create an account
+2. Link a bank card
+3. Order a taxi
+4. Manage current trip
+5. View daily fleet report
+6. Fleet administration
+0. Exit
+Choose an option: 6
+Administrator login required.
+Enter admin ID: 100200300
+Enter admin password: 4471
+
+--- FLEET ADMINISTRATION ---
+1. View driver status
+2. Change driver status
+0. Return to main menu
+Choose an option: 1
+
+--- DRIVER STATUS ---
+1 = Free
+2 = Busy / en route
+3 = Busy / unavailable, including reserved
+Karl: status 1
+Gustavo: status 1
+
+---- TUDENGITAKSO ----
+1. Create an account
+2. Link a bank card
+3. Order a taxi
+4. Manage current trip
+5. View daily fleet report
+6. Fleet administration
+0. Exit
+Choose an option: 6
+Administrator login required.
+Enter admin ID: 100200300
+Enter admin password: 4471
+
+--- FLEET ADMINISTRATION ---
+1. View driver status
+2. Change driver status
+0. Return to main menu
+Choose an option: 2
+Enter driver ID (1 = Karl, 2 = Gustavo): 1
+Enter new status (1 = Free, 2 = Busy/en route, 3 = Unavailable): 2
+Karl now has status 2.
+
+---- TUDENGITAKSO ----
+1. Create an account
+2. Link a bank card
+3. Order a taxi
+4. Manage current trip
+5. View daily fleet report
+6. Fleet administration
+0. Exit
+Choose an option: 3
+Enter the order hour (0-23): 22
+Enter the order minute (0-59): 22
+Order time recorded: 22:22
+
+--- TUDENGITAKSO LOCATIONS ---
+1. TalTech Main Building
+2. Academic Hostel
+3. Mustamae Keskus
+4. Balti Jaam railway station
+5. Tallinn Airport
+6. IKEA Tallinn
+Choose the pickup location: 1
+Choose the destination: 5
+Gustavo has been assigned to your taxi.
+
+--- BOOKING SUMMARY ---
+Trip distance: 9.2 km
+Fare: 11.70 EUR
+Booking saved. No payment has been made.
+
+---- TUDENGITAKSO ----
+1. Create an account
+2. Link a bank card
+3. Order a taxi
+4. Manage current trip
+5. View daily fleet report
+6. Fleet administration
+0. Exit
+Choose an option: 4
+
+--- MANAGE CURRENT TRIP ---
+1. Start trip and pay
+2. Complete trip
+3. Cancel booking
+0. Return to main menu
+Choose an option: 3
+Your trip has been cancelled! Come back again?
+No payment was taken.
+
+---- TUDENGITAKSO ----
+1. Create an account
+2. Link a bank card
+3. Order a taxi
+4. Manage current trip
+5. View daily fleet report
+6. Fleet administration
+0. Exit
+Choose an option: 6
+Administrator login required.
+Enter admin ID: 100200300
+Enter admin password: 4471
+
+--- FLEET ADMINISTRATION ---
+1. View driver status
+2. Change driver status
+0. Return to main menu
+Choose an option: 2
+Enter driver ID (1 = Karl, 2 = Gustavo): 2
+Enter new status (1 = Free, 2 = Busy/en route, 3 = Unavailable): 2
+Gustavo now has status 2.
+
+---- TUDENGITAKSO ----
+1. Create an account
+2. Link a bank card
+3. Order a taxi
+4. Manage current trip
+5. View daily fleet report
+6. Fleet administration
+0. Exit
+Choose an option: 6
+Administrator login required.
+Enter admin ID: 100200300
+Enter admin password: 4471
+
+--- FLEET ADMINISTRATION ---
+1. View driver status
+2. Change driver status
+0. Return to main menu
+Choose an option: 2
+Enter driver ID (1 = Karl, 2 = Gustavo): 1
+Enter new status (1 = Free, 2 = Busy/en route, 3 = Unavailable): 2
+Karl now has status 2.
+
+---- TUDENGITAKSO ----
+1. Create an account
+2. Link a bank card
+3. Order a taxi
+4. Manage current trip
+5. View daily fleet report
+6. Fleet administration
+0. Exit
+Choose an option: 3
+Enter the order hour (0-23): 33
+Enter the order minute (0-59): 33
+Invalid time. Enter an hour from 0 to 23 and minutes from 0 to 59.
+
+---- TUDENGITAKSO ----
+1. Create an account
+2. Link a bank card
+3. Order a taxi
+4. Manage current trip
+5. View daily fleet report
+6. Fleet administration
+0. Exit
+Choose an option: 3
+Enter the order hour (0-23): 12
+Enter the order minute (0-59): 12
+Order time recorded: 12:12
+
+--- TUDENGITAKSO LOCATIONS ---
+1. TalTech Main Building
+2. Academic Hostel
+3. Mustamae Keskus
+4. Balti Jaam railway station
+5. Tallinn Airport
+6. IKEA Tallinn
+Choose the pickup location: 1
+Choose the destination: 5
+Karl has been assigned to your taxi.
+
+--- BOOKING SUMMARY ---
+Trip distance: 9.2 km
+Fare: 11.70 EUR
+Booking saved. No payment has been made.
+
+---- TUDENGITAKSO ----
+1. Create an account
+2. Link a bank card
+3. Order a taxi
+4. Manage current trip
+5. View daily fleet report
+6. Fleet administration
+0. Exit
+Choose an option: 4
+
+--- MANAGE CURRENT TRIP ---
+1. Start trip and pay
+2. Complete trip
+3. Cancel booking
+0. Return to main menu
+Choose an option: 3
+Your trip has been cancelled! Come back again?
+No payment was taken.
+
+---- TUDENGITAKSO ----
+1. Create an account
+2. Link a bank card
+3. Order a taxi
+4. Manage current trip
+5. View daily fleet report
+6. Fleet administration
+0. Exit
+Choose an option: 6
+Administrator login required.
+Enter admin ID: 100200300
+Enter admin password: 4471
+
+--- FLEET ADMINISTRATION ---
+1. View driver status
+2. Change driver status
+0. Return to main menu
+Choose an option: 1
+
+--- DRIVER STATUS ---
+1 = Free
+2 = Busy / en route
+3 = Busy / unavailable, including reserved
+Karl: status 2
+Gustavo: status 2
+
+---- TUDENGITAKSO ----
+1. Create an account
+2. Link a bank card
+3. Order a taxi
+4. Manage current trip
+5. View daily fleet report
+6. Fleet administration
+0. Exit
+Choose an option: 3
+Enter the order hour (0-23): 12
+Enter the order minute (0-59): 0
+Order time recorded: 12:00
+
+--- TUDENGITAKSO LOCATIONS ---
+1. TalTech Main Building
+2. Academic Hostel
+3. Mustamae Keskus
+4. Balti Jaam railway station
+5. Tallinn Airport
+6. IKEA Tallinn
+Choose the pickup location: 5
+Choose the destination: 1
+Gustavo has been assigned to your taxi.
+
+--- BOOKING SUMMARY ---
+Trip distance: 9.2 km
+Fare: 11.70 EUR
+Booking saved. No payment has been made.
+
+---- TUDENGITAKSO ----
+1. Create an account
+2. Link a bank card
+3. Order a taxi
+4. Manage current trip
+5. View daily fleet report
+6. Fleet administration
+0. Exit
+Choose an option: 4
+
+--- MANAGE CURRENT TRIP ---
+1. Start trip and pay
+2. Complete trip
+3. Cancel booking
+0. Return to main menu
+Choose an option: 3
+Your trip has been cancelled! Come back again?
+No payment was taken.
+
+---- TUDENGITAKSO ----
+1. Create an account
+2. Link a bank card
+3. Order a taxi
+4. Manage current trip
+5. View daily fleet report
+6. Fleet administration
+0. Exit
+Choose an option: 6
+Administrator login required.
+Enter admin ID: 100200300
+Enter admin password: 4471
+
+--- FLEET ADMINISTRATION ---
+1. View driver status
+2. Change driver status
+0. Return to main menu
+Choose an option: 1
+
+--- DRIVER STATUS ---
+1 = Free
+2 = Busy / en route
+3 = Busy / unavailable, including reserved
+Karl: status 2
+Gustavo: status 2
+
+---- TUDENGITAKSO ----
+1. Create an account
+2. Link a bank card
+3. Order a taxi
+4. Manage current trip
+5. View daily fleet report
+6. Fleet administration
+0. Exit
+Choose an option: 3
+Enter the order hour (0-23): 12
+Enter the order minute (0-59): 0
+Order time recorded: 12:00
+
+--- TUDENGITAKSO LOCATIONS ---
+1. TalTech Main Building
+2. Academic Hostel
+3. Mustamae Keskus
+4. Balti Jaam railway station
+5. Tallinn Airport
+6. IKEA Tallinn
+Choose the pickup location: 6
+Choose the destination: 1
+No eligible driver is available. Please try later.
+
+---- TUDENGITAKSO ----
+1. Create an account
+2. Link a bank card
+3. Order a taxi
+4. Manage current trip
+5. View daily fleet report
+6. Fleet administration
+0. Exit
+Choose an option: 4
+
+--- MANAGE CURRENT TRIP ---
+1. Start trip and pay
+2. Complete trip
+3. Cancel booking
+0. Return to main menu
+Choose an option: 1
+No current trip. Order a taxi first.
+
+---- TUDENGITAKSO ----
+1. Create an account
+2. Link a bank card
+3. Order a taxi
+4. Manage current trip
+5. View daily fleet report
+6. Fleet administration
+0. Exit
+Choose an option: 3
+Enter the order hour (0-23): 12
+Enter the order minute (0-59): 00
+Order time recorded: 12:00
+
+--- TUDENGITAKSO LOCATIONS ---
+1. TalTech Main Building
+2. Academic Hostel
+3. Mustamae Keskus
+4. Balti Jaam railway station
+5. Tallinn Airport
+6. IKEA Tallinn
+Choose the pickup location: 1
+Choose the destination: 5
+Karl has been assigned to your taxi.
+
+--- BOOKING SUMMARY ---
+Trip distance: 9.2 km
+Fare: 11.70 EUR
+Booking saved. No payment has been made.
+
+---- TUDENGITAKSO ----
+1. Create an account
+2. Link a bank card
+3. Order a taxi
+4. Manage current trip
+5. View daily fleet report
+6. Fleet administration
+0. Exit
+Choose an option: 6
+Administrator login required.
+Enter admin ID: 100200300
+Enter admin password: 4471
+
+--- FLEET ADMINISTRATION ---
+1. View driver status
+2. Change driver status
+0. Return to main menu
+Choose an option: 1
+
+--- DRIVER STATUS ---
+1 = Free
+2 = Busy / en route
+3 = Busy / unavailable, including reserved
+Karl: status 3
+Gustavo: status 2
+
+---- TUDENGITAKSO ----
+1. Create an account
+2. Link a bank card
+3. Order a taxi
+4. Manage current trip
+5. View daily fleet report
+6. Fleet administration
+0. Exit
+Choose an option: 6
+Administrator login required.
+Enter admin ID: 100200300
+Enter admin password: 4471
+
+--- FLEET ADMINISTRATION ---
+1. View driver status
+2. Change driver status
+0. Return to main menu
+Choose an option: 2
+Driver status cannot be changed while a trip is booked or started.
+
+---- TUDENGITAKSO ----
+1. Create an account
+2. Link a bank card
+3. Order a taxi
+4. Manage current trip
+5. View daily fleet report
+6. Fleet administration
+0. Exit
+Choose an option: 4
+
+--- MANAGE CURRENT TRIP ---
+1. Start trip and pay
+2. Complete trip
+3. Cancel booking
+0. Return to main menu
+Choose an option: 1
+11.70 EUR
+Enter 1 to simulate successful payment or 0 to simulate failure: 1
+Payment successful. Your trip has started.
+
+---- TUDENGITAKSO ----
+1. Create an account
+2. Link a bank card
+3. Order a taxi
+4. Manage current trip
+5. View daily fleet report
+6. Fleet administration
+0. Exit
+Choose an option: 6
+Administrator login required.
+Enter admin ID: 100200300
+Enter admin password: 4471
+
+--- FLEET ADMINISTRATION ---
+1. View driver status
+2. Change driver status
+0. Return to main menu
+Choose an option: 1
+
+--- DRIVER STATUS ---
+1 = Free
+2 = Busy / en route
+3 = Busy / unavailable, including reserved
+Karl: status 3
+Gustavo: status 2
+
+---- TUDENGITAKSO ----
+1. Create an account
+2. Link a bank card
+3. Order a taxi
+4. Manage current trip
+5. View daily fleet report
+6. Fleet administration
+0. Exit
+Choose an option: 6
+Administrator login required.
+Enter admin ID: 100200300
+Enter admin password: 4471
+
+--- FLEET ADMINISTRATION ---
+1. View driver status
+2. Change driver status
+0. Return to main menu
+Choose an option: 2
+Driver status cannot be changed while a trip is booked or started.
+
+---- TUDENGITAKSO ----
+1. Create an account
+2. Link a bank card
+3. Order a taxi
+4. Manage current trip
+5. View daily fleet report
+6. Fleet administration
+0. Exit
+Choose an option: 4
+
+--- MANAGE CURRENT TRIP ---
+1. Start trip and pay
+2. Complete trip
+3. Cancel booking
+0. Return to main menu
+Choose an option: 2
+Trip completed. Thank you for riding with TUDENGITAKSO!
+
+---- TUDENGITAKSO ----
+1. Create an account
+2. Link a bank card
+3. Order a taxi
+4. Manage current trip
+5. View daily fleet report
+6. Fleet administration
+0. Exit
+Choose an option: 6
+Administrator login required.
+Enter admin ID: 100200300
+Enter admin password: 4471
+
+--- FLEET ADMINISTRATION ---
+1. View driver status
+2. Change driver status
+0. Return to main menu
+Choose an option: 1
+
+--- DRIVER STATUS ---
+1 = Free
+2 = Busy / en route
+3 = Busy / unavailable, including reserved
+Karl: status 1
+Gustavo: status 2
+
+---- TUDENGITAKSO ----
+1. Create an account
+2. Link a bank card
+3. Order a taxi
+4. Manage current trip
+5. View daily fleet report
+6. Fleet administration
+0. Exit
+Choose an option: 6
+Administrator login required.
+Enter admin ID: 100200300
+Enter admin password: 4471
+
+--- FLEET ADMINISTRATION ---
+1. View driver status
+2. Change driver status
+0. Return to main menu
+Choose an option: 2
+Enter driver ID (1 = Karl, 2 = Gustavo): 9
+Enter new status (1 = Free, 2 = Busy/en route, 3 = Unavailable): 1
+Invalid driver ID or status. No changes were made.
+
+---- TUDENGITAKSO ----
+1. Create an account
+2. Link a bank card
+3. Order a taxi
+4. Manage current trip
+5. View daily fleet report
+6. Fleet administration
+0. Exit
+Choose an option: 6
+Administrator login required.
+Enter admin ID: 100200300
+Enter admin password: 2
+Invalid administrator credentials.
+
+---- TUDENGITAKSO ----
+1. Create an account
+2. Link a bank card
+3. Order a taxi
+4. Manage current trip
+5. View daily fleet report
+6. Fleet administration
+0. Exit
+Choose an option: 6
+Administrator login required.
+Enter admin ID: 100200300
+Enter admin password: 4471
+
+--- FLEET ADMINISTRATION ---
+1. View driver status
+2. Change driver status
+0. Return to main menu
+Choose an option: 2
+Enter driver ID (1 = Karl, 2 = Gustavo): 1
+Enter new status (1 = Free, 2 = Busy/en route, 3 = Unavailable): 0
+Invalid driver ID or status. No changes were made.
+
+---- TUDENGITAKSO ----
+1. Create an account
+2. Link a bank card
+3. Order a taxi
+4. Manage current trip
+5. View daily fleet report
+6. Fleet administration
+0. Exit
+Choose an option: 6
+Administrator login required.
+Enter admin ID: 100200300
+Enter admin password: 4471
+
+--- FLEET ADMINISTRATION ---
+1. View driver status
+2. Change driver status
+0. Return to main menu
+Choose an option: 1
+
+--- DRIVER STATUS ---
+1 = Free
+2 = Busy / en route
+3 = Busy / unavailable, including reserved
+Karl: status 1
+Gustavo: status 2
+
+---- TUDENGITAKSO ----
+1. Create an account
+2. Link a bank card
+3. Order a taxi
+4. Manage current trip
+5. View daily fleet report
+6. Fleet administration
+0. Exit
+Choose an option:
