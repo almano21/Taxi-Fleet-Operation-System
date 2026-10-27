@@ -11,7 +11,7 @@ struct Driver
     double revenue;
 };
 
-/* Keep the current booking's related values together. */
+/* Keeps the current booking's related values together. */
 struct Trip
 {
     /* 0 = none; 1 = booked/unpaid; 2 = started/paid. */
