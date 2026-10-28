@@ -103,7 +103,7 @@ int selectDriver(const struct Driver drivers[],
     int selectedDriverID = 0;
     double nearestDistance = 0.0;
 
-    if (drivers == NULL || driverCount <= 0 ||
+    if (driverCount <= 0 ||
         pickupLocation < 1 || pickupLocation > 6)
     {
         return 0;
