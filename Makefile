@@ -1,5 +1,5 @@
 CC      = gcc
-CFLAGS  = -std=c99 -Wall -Wextra -Wno-format-extra-args -g
+CFLAGS  = -std=c99 -Wall -Wextra -g
 TARGET  = tudengitakso
 OBJS    = main.o menu.o trip.o driver.o admin.o storage.o
 

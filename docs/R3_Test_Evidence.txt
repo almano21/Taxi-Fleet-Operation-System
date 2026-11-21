@@ -2,18 +2,26 @@ TUDENGITAKSO Release 3 Verification Evidence
 
 Build
 Command: make clean && make
-Observed: All six C modules compiled and linked successfully with GCC. No compiler warnings or errors were printed.
+Compiler: GCC with -std=c99 -Wall -Wextra.
+Observed: All six C modules compiled and linked successfully. No warnings or errors were reported. The GCC-specific extra-argument warning was fixed rather than suppressed.
 
-Resize and lecturer-requested trip sequence
-1. Started with the default Karl and Gustavo records.
-2. Added Mari as driver ID 3. The program reported capacity growth from 2 to 4.
+Dynamic-array and lecturer-requested trip sequence
+The test used a clean copy of the default drivers.csv so the repository's starter data remained unchanged.
+1. Started with Karl and Gustavo.
+2. Added Mari as driver ID 3. The driver array grew from capacity 2 to capacity 4, and all three records remained available.
 3. Set Karl to status 2 (en route), Gustavo to status 3 (unavailable), and Mari to status 3.
-4. Booked from TalTech Main Building (1) to Tallinn Airport (5). Karl was assigned. The trip distance was 9.2 km and fare was EUR 11.70.
-5. Simulated payment failure and cancelled. Cancellation succeeded and no payment was taken.
-6. Booked the same route again. Karl was assigned. Successful simulated payment started the trip.
-7. Completed the trip. The program reported completion.
-8. Attempted completion again. The program reported that there was no current trip.
-9. The report showed 1 completed trip and EUR 11.70 total revenue; Karl showed 1 trip and EUR 11.70. Gustavo and Mari remained at 0 trips and EUR 0.00.
-10. Exited and restarted. The program loaded 3 drivers from drivers.csv. The saved CSV retained all driver records and Karl's statistics. trip_log.csv contained the completed trip once.
+4. Booked TalTech Main Building (1) to Tallinn Airport (5). Karl was assigned; the trip distance was 9.2 km and the fare was EUR 11.70.
+5. Simulated payment failure, then cancelled the booking. No payment or report update occurred.
+6. Booked the same route again. Karl was assigned, showing his previous en-route status had been restored.
+7. Simulated successful payment and completed the trip.
+8. Attempted completion a second time. The program reported that there was no current trip.
+9. The cumulative fleet report showed 1 completed trip and EUR 11.70. Karl showed 1 trip and EUR 11.70; Gustavo and Mari remained at zero.
+10. Restarted the program and viewed the administrator report. It again showed three drivers, Karl's 1 trip, and EUR 11.70. The trip log contained the completed trip once.
 
-Result: All checks listed above passed in this run.
+Input-validation checks
+1. Entered nan for a new driver's distance. The program rejected the new driver.
+2. Put nan in a driver's distance in a test copy of drivers.csv. The loader rejected that file and used the default fleet. On exit, the invalid input file was not overwritten.
+
+File-output handling: saveDrivers and appendTripLog now report fprintf or fclose failures to their callers. A disk-full or permission failure was not simulated.
+
+Result: The listed runtime checks passed. Console output is in docs/R3/r3_regression_output.txt, docs/R3/r3_restart_output.txt, and docs/R3/r3_invalid_distance_output.txt. The generated trip log is in docs/R3/trip_log_test_output.csv.

@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 #include "storage.h"
 #include "driver.h"
 
@@ -42,14 +43,15 @@ int loadDrivers(const char* fileName, struct Driver** drivers,
 
         if (valid && (record.driverID != *count + 1 ||
             record.status < 1 || record.status > 3 ||
-            record.completedTrips < 0 || record.revenue < 0.0))
+            record.completedTrips < 0 || !isfinite(record.revenue) ||
+            record.revenue < 0.0))
         {
             valid = 0;
         }
 
         for (int i = 0; valid && i < LOCATION_COUNT; i++)
         {
-            if (d[i] < 0.0)
+            if (!isfinite(d[i]) || d[i] < 0.0 || d[i] > 50.0)
             {
                 valid = 0;
             }
@@ -79,29 +81,49 @@ int loadDrivers(const char* fileName, struct Driver** drivers,
 int saveDrivers(const char* fileName, const struct Driver* drivers, int count)
 {
     FILE* file = fopen(fileName, "w");
+    int success = 1;
 
     if (file == NULL)
     {
         return 0;
     }
 
-    fprintf(file, "id,name,status,dist1,dist2,dist3,dist4,dist5,dist6,"
-        "completedTrips,revenue\n");
+    if (fprintf(file, "id,name,status,dist1,dist2,dist3,dist4,dist5,dist6,"
+            "completedTrips,revenue\n") < 0)
+    {
+        success = 0;
+    }
 
-    for (int i = 0; i < count; i++)
+    for (int i = 0; success && i < count; i++)
     {
         const struct Driver* driver = drivers + i;
 
-        fprintf(file, "%d,%s,%d", driver->driverID, driver->name, driver->status);
+        if (fprintf(file, "%d,%s,%d", driver->driverID,
+                driver->name, driver->status) < 0)
+        {
+            success = 0;
+            break;
+        }
         for (int j = 0; j < LOCATION_COUNT; j++)
         {
-            fprintf(file, ",%.1f", driver->pickupDistances[j]);
+            if (fprintf(file, ",%.1f", driver->pickupDistances[j]) < 0)
+            {
+                success = 0;
+                break;
+            }
         }
-        fprintf(file, ",%d,%.2f\n", driver->completedTrips, driver->revenue);
+        if (success && fprintf(file, ",%d,%.2f\n",
+                driver->completedTrips, driver->revenue) < 0)
+        {
+            success = 0;
+        }
     }
 
-    fclose(file);
-    return 1;
+    if (fclose(file) != 0)
+    {
+        success = 0;
+    }
+    return success;
 }
 
 int appendTripLog(const char* fileName, const struct Trip* trip,
@@ -109,6 +131,7 @@ int appendTripLog(const char* fileName, const struct Trip* trip,
 {
     FILE* file;
     int isNewFile;
+    int success = 1;
 
     file = fopen(fileName, "r");
     isNewFile = (file == NULL);
@@ -125,16 +148,25 @@ int appendTripLog(const char* fileName, const struct Trip* trip,
 
     if (isNewFile)
     {
-        fprintf(file, "orderTime,pickup,destination,distanceKm,fareEur,driver\n");
+        if (fprintf(file, "orderTime,pickup,destination,distanceKm,fareEur,driver\n") < 0)
+        {
+            success = 0;
+        }
     }
 
-    fprintf(file, "%02d:%02d,%d,%d,%.1f,%.2f,%s\n",
-        trip->orderHour, trip->orderMinute,
-        trip->pickupLocation, trip->destinationLocation,
-        trip->tripDistance, trip->fare, driverName);
+    if (success && fprintf(file, "%02d:%02d,%d,%d,%.1f,%.2f,%s\n",
+            trip->orderHour, trip->orderMinute,
+            trip->pickupLocation, trip->destinationLocation,
+            trip->tripDistance, trip->fare, driverName) < 0)
+    {
+        success = 0;
+    }
 
-    fclose(file);
-    return 1;
+    if (fclose(file) != 0)
+    {
+        success = 0;
+    }
+    return success;
 }
 
 

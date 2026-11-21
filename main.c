@@ -10,6 +10,7 @@ int main(void)
     int driverCount = 0;
     int loadResult;
     int exitCode;
+    int driverFileCanBeSaved;
 
     struct Trip trip = { 0, -1, -1, 0, 0, 0, 0.0, 0.0, 0, 0 };
 
@@ -21,6 +22,7 @@ int main(void)
     }
 
     loadResult = loadDrivers(DRIVERS_FILE, &drivers, &driverCount, &capacity);
+    driverFileCanBeSaved = (loadResult >= 0);
     if (loadResult > 0)
     {
         printf("Loaded %d drivers from %s.\n", driverCount, DRIVERS_FILE);
@@ -41,7 +43,11 @@ int main(void)
         printf("The unfinished trip was not saved.\n");
     }
 
-    if (saveDrivers(DRIVERS_FILE, drivers, driverCount))
+    if (!driverFileCanBeSaved)
+    {
+        printf("Driver data was not saved because the input file could not be loaded safely.\n");
+    }
+    else if (saveDrivers(DRIVERS_FILE, drivers, driverCount))
     {
         printf("Driver data saved to %s.\n", DRIVERS_FILE);
     }
