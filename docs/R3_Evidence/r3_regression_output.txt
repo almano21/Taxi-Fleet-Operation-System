@@ -1,0 +1,258 @@
+Loaded 2 drivers from drivers.csv.
+
+---- TUDENGITAKSO ----
+1. Create an account
+2. Link a bank card
+3. Order a taxi
+4. Manage current trip
+5. View daily fleet report
+6. Fleet administration
+0. Exit
+Choose an option: Enter the 12 digits between S and M (first digit 1-9): Enter your phone number: 372 followed by 8 digits: Registration successful! Choose option 2 to link your bank card.
+Registered student ID: S123456789012M
+
+---- TUDENGITAKSO ----
+1. Create an account
+2. Link a bank card
+3. Order a taxi
+4. Manage current trip
+5. View daily fleet report
+6. Fleet administration
+0. Exit
+Choose an option: Enter 1 to link a demo bank card or 0 to cancel: Enter a fictional 16-digit card number: Enter the expiry month (1-12): Enter the expiry year (2026-2036): Demo card ending in 3456 linked successfully!
+Demo expiry: 12/2029
+
+---- TUDENGITAKSO ----
+1. Create an account
+2. Link a bank card
+3. Order a taxi
+4. Manage current trip
+5. View daily fleet report
+6. Fleet administration
+0. Exit
+Choose an option: Administrator login required.
+Enter admin ID: Enter admin password: 
+--- FLEET ADMINISTRATION ---
+1. View driver status
+2. Change driver status
+3. Add a driver
+0. Return to main menu
+Choose an option: Enter the driver's first name (max 19 letters, no spaces or commas): Distance from the driver to location 1 (0-50 km): Distance from the driver to location 2 (0-50 km): Distance from the driver to location 3 (0-50 km): Distance from the driver to location 4 (0-50 km): Distance from the driver to location 5 (0-50 km): Distance from the driver to location 6 (0-50 km): Driver list was full: capacity grew from 2 to 4.
+Mari added with ID 3.
+Stored drivers: 3 (allocated capacity: 4)
+ID   Name                Status  Trips  Revenue
+1    Karl                1       0      0.00 EUR
+2    Gustavo             1       0      0.00 EUR
+3    Mari                1       0      0.00 EUR
+
+---- TUDENGITAKSO ----
+1. Create an account
+2. Link a bank card
+3. Order a taxi
+4. Manage current trip
+5. View daily fleet report
+6. Fleet administration
+0. Exit
+Choose an option: Administrator login required.
+Enter admin ID: Enter admin password: 
+--- FLEET ADMINISTRATION ---
+1. View driver status
+2. Change driver status
+3. Add a driver
+0. Return to main menu
+Choose an option: Enter driver ID (1-3): Enter new status (1 = Free, 2 = Busy/en route, 3 = Unavailable): Karl now has status 2.
+
+---- TUDENGITAKSO ----
+1. Create an account
+2. Link a bank card
+3. Order a taxi
+4. Manage current trip
+5. View daily fleet report
+6. Fleet administration
+0. Exit
+Choose an option: Administrator login required.
+Enter admin ID: Enter admin password: 
+--- FLEET ADMINISTRATION ---
+1. View driver status
+2. Change driver status
+3. Add a driver
+0. Return to main menu
+Choose an option: Enter driver ID (1-3): Enter new status (1 = Free, 2 = Busy/en route, 3 = Unavailable): Gustavo now has status 3.
+
+---- TUDENGITAKSO ----
+1. Create an account
+2. Link a bank card
+3. Order a taxi
+4. Manage current trip
+5. View daily fleet report
+6. Fleet administration
+0. Exit
+Choose an option: Administrator login required.
+Enter admin ID: Enter admin password: 
+--- FLEET ADMINISTRATION ---
+1. View driver status
+2. Change driver status
+3. Add a driver
+0. Return to main menu
+Choose an option: Enter driver ID (1-3): Enter new status (1 = Free, 2 = Busy/en route, 3 = Unavailable): Mari now has status 3.
+
+---- TUDENGITAKSO ----
+1. Create an account
+2. Link a bank card
+3. Order a taxi
+4. Manage current trip
+5. View daily fleet report
+6. Fleet administration
+0. Exit
+Choose an option: Enter the order hour (0-23): Enter the order minute (0-59): Order time recorded: 22:22
+
+--- TUDENGITAKSO LOCATIONS ---
+1. TalTech Main Building
+2. Academic Hostel
+3. Mustamae Keskus
+4. Balti Jaam railway station
+5. Tallinn Airport
+6. IKEA Tallinn
+Choose the pickup location: Choose the destination: Karl has been assigned to your taxi.
+
+--- BOOKING SUMMARY ---
+Trip distance: 9.2 km
+Fare: 11.70 EUR
+Booking saved. No payment has been made.
+
+---- TUDENGITAKSO ----
+1. Create an account
+2. Link a bank card
+3. Order a taxi
+4. Manage current trip
+5. View daily fleet report
+6. Fleet administration
+0. Exit
+Choose an option: 
+--- MANAGE CURRENT TRIP ---
+1. Start trip and pay
+2. Complete trip
+3. Cancel booking
+0. Return to main menu
+Choose an option: 11.70 EUR
+Enter 1 to simulate successful payment or 0 to simulate failure: Payment failed. Your trip remains booked and unpaid.
+
+---- TUDENGITAKSO ----
+1. Create an account
+2. Link a bank card
+3. Order a taxi
+4. Manage current trip
+5. View daily fleet report
+6. Fleet administration
+0. Exit
+Choose an option: 
+--- MANAGE CURRENT TRIP ---
+1. Start trip and pay
+2. Complete trip
+3. Cancel booking
+0. Return to main menu
+Choose an option: Your trip has been cancelled! Come back again?
+No payment was taken.
+
+---- TUDENGITAKSO ----
+1. Create an account
+2. Link a bank card
+3. Order a taxi
+4. Manage current trip
+5. View daily fleet report
+6. Fleet administration
+0. Exit
+Choose an option: Enter the order hour (0-23): Enter the order minute (0-59): Order time recorded: 22:23
+
+--- TUDENGITAKSO LOCATIONS ---
+1. TalTech Main Building
+2. Academic Hostel
+3. Mustamae Keskus
+4. Balti Jaam railway station
+5. Tallinn Airport
+6. IKEA Tallinn
+Choose the pickup location: Choose the destination: Karl has been assigned to your taxi.
+
+--- BOOKING SUMMARY ---
+Trip distance: 9.2 km
+Fare: 11.70 EUR
+Booking saved. No payment has been made.
+
+---- TUDENGITAKSO ----
+1. Create an account
+2. Link a bank card
+3. Order a taxi
+4. Manage current trip
+5. View daily fleet report
+6. Fleet administration
+0. Exit
+Choose an option: 
+--- MANAGE CURRENT TRIP ---
+1. Start trip and pay
+2. Complete trip
+3. Cancel booking
+0. Return to main menu
+Choose an option: 11.70 EUR
+Enter 1 to simulate successful payment or 0 to simulate failure: Payment successful. Your trip has started.
+
+---- TUDENGITAKSO ----
+1. Create an account
+2. Link a bank card
+3. Order a taxi
+4. Manage current trip
+5. View daily fleet report
+6. Fleet administration
+0. Exit
+Choose an option: 
+--- MANAGE CURRENT TRIP ---
+1. Start trip and pay
+2. Complete trip
+3. Cancel booking
+0. Return to main menu
+Choose an option: Trip completed. Thank you for riding with TUDENGITAKSO!
+
+---- TUDENGITAKSO ----
+1. Create an account
+2. Link a bank card
+3. Order a taxi
+4. Manage current trip
+5. View daily fleet report
+6. Fleet administration
+0. Exit
+Choose an option: 
+--- MANAGE CURRENT TRIP ---
+1. Start trip and pay
+2. Complete trip
+3. Cancel booking
+0. Return to main menu
+Choose an option: No current trip. Order a taxi first.
+
+---- TUDENGITAKSO ----
+1. Create an account
+2. Link a bank card
+3. Order a taxi
+4. Manage current trip
+5. View daily fleet report
+6. Fleet administration
+0. Exit
+Choose an option: Administrator login required.
+Enter admin ID: Enter admin password: 
+--- DAILY FLEET REPORT ---
+Total trips completed: 1
+Total revenue: 11.70 EUR
+Karl: 1 trips, 11.70 EUR revenue
+Gustavo: 0 trips, 0.00 EUR revenue
+Mari: 0 trips, 0.00 EUR revenue
+
+---- TUDENGITAKSO ----
+1. Create an account
+2. Link a bank card
+3. Order a taxi
+4. Manage current trip
+5. View daily fleet report
+6. Fleet administration
+0. Exit
+Choose an option: Program closed. Thank you for using TUDENGITAKSO!
+Driver data saved to drivers.csv.
+
+STDERR:

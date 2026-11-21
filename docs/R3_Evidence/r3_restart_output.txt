@@ -1,0 +1,13 @@
+Driver list was full: capacity grew from 2 to 4.
+Loaded 3 drivers from drivers.csv.
+
+---- TUDENGITAKSO ----
+1. Create an account
+2. Link a bank card
+3. Order a taxi
+4. Manage current trip
+5. View daily fleet report
+6. Fleet administration
+0. Exit
+Choose an option: Program closed. Thank you for using TUDENGITAKSO!
+Driver data saved to drivers.csv.
