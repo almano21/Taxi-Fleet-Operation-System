@@ -6,7 +6,24 @@ Loaded 3 drivers from drivers.csv.
 2. Link a bank card
 3. Order a taxi
 4. Manage current trip
-5. View daily fleet report
+5. View fleet report (cumulative)
+6. Fleet administration
+0. Exit
+Choose an option: Administrator login required.
+Enter admin ID: Enter admin password: 
+--- CUMULATIVE FLEET REPORT ---
+Total trips completed: 1
+Total revenue: 11.70 EUR
+Karl: 1 trips, 11.70 EUR revenue
+Gustavo: 0 trips, 0.00 EUR revenue
+Mari: 0 trips, 0.00 EUR revenue
+
+---- TUDENGITAKSO ----
+1. Create an account
+2. Link a bank card
+3. Order a taxi
+4. Manage current trip
+5. View fleet report (cumulative)
 6. Fleet administration
 0. Exit
 Choose an option: Program closed. Thank you for using TUDENGITAKSO!
