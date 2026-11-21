@@ -63,7 +63,7 @@ struct Driver* createDriverArray(int capacity)
         return NULL;
     }
 
-    return calloc((size_t)capacity, sizeof(struct Driver));
+    return malloc((size_t)capacity * sizeof(struct Driver));
 }
 
 void initDriverArray(struct Driver* drivers, int count)

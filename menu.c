@@ -6,6 +6,20 @@
 #include "admin.h"
 #include "storage.h"
 
+static void clearTripFields(struct Trip* trip)
+{
+    trip->status = 0;
+    trip->orderHour = -1;
+    trip->orderMinute = -1;
+    trip->contactPhoneNumber = 0;
+    trip->pickupLocation = 0;
+    trip->destinationLocation = 0;
+    trip->tripDistance = 0.0;
+    trip->fare = 0.0;
+    trip->assignedDriverID = 0;
+    trip->previousDriverStatus = 0;
+}
+
 int runMainMenu(struct Driver** driverArray, int* driverCount,
     int* capacity, struct Trip* trip)
 {
@@ -53,7 +67,7 @@ int runMainMenu(struct Driver** driverArray, int* driverCount,
             "2. Link a bank card\n"
             "3. Order a taxi\n"
             "4. Manage current trip\n"
-            "5. View daily fleet report\n"
+            "5. View fleet report (cumulative)\n"
             "6. Fleet administration\n"
             "0. Exit\n");
 
@@ -369,16 +383,7 @@ int runMainMenu(struct Driver** driverArray, int* driverCount,
                         }
 
                         drivers[driverIndex].status = 1;
-                        trip->status = 0;
-                        trip->assignedDriverID = 0;
-                        trip->previousDriverStatus = 0;
-                        trip->orderHour = -1;
-                        trip->orderMinute = -1;
-                        trip->contactPhoneNumber = 0;
-                        trip->pickupLocation = 0;
-                        trip->destinationLocation = 0;
-                        trip->tripDistance = 0.0;
-                        trip->fare = 0.0;
+                        clearTripFields(trip);
 
                         printf("Trip completed. Thank you for riding with TUDENGITAKSO!\n");
                     }
@@ -395,16 +400,7 @@ int runMainMenu(struct Driver** driverArray, int* driverCount,
 
                         drivers[driverIndex].status = trip->previousDriverStatus;
 
-                        trip->status = 0;
-                        trip->assignedDriverID = 0;
-                        trip->previousDriverStatus = 0;
-                        trip->orderHour = -1;
-                        trip->orderMinute = -1;
-                        trip->contactPhoneNumber = 0;
-                        trip->pickupLocation = 0;
-                        trip->destinationLocation = 0;
-                        trip->tripDistance = 0.0;
-                        trip->fare = 0.0;
+                        clearTripFields(trip);
 
                         printf("Your trip has been cancelled! Come back again?\n");
                         printf("No payment was taken.\n");
@@ -447,7 +443,7 @@ int runMainMenu(struct Driver** driverArray, int* driverCount,
                     totalRevenue += drivers[i].revenue;
                 }
 
-                printf("\n--- DAILY FLEET REPORT ---\n");
+                printf("\n--- CUMULATIVE FLEET REPORT ---\n");
                 printf("Total trips completed: %d\n", totalTrips);
                 printf("Total revenue: %.2f EUR\n", totalRevenue);
                 for (int i = 0; i < *driverCount; i++)
@@ -566,7 +562,14 @@ int runMainMenu(struct Driver** driverArray, int* driverCount,
 
                         printf("Enter the driver's first name (max %d letters, no spaces or commas): ",
                             DRIVER_NAME_SIZE - 1);
-                        if (scanf_s("%19s", newDriver.name, (unsigned)sizeof newDriver.name) != 1)
+                        int nameInputResult;
+#ifdef _MSC_VER
+                        nameInputResult = scanf_s("%19s", newDriver.name,
+                            (unsigned)sizeof newDriver.name);
+#else
+                        nameInputResult = scanf("%19s", newDriver.name);
+#endif
+                        if (nameInputResult != 1)
                         {
                             printf("Invalid input or input ended. Please restart the program.\n");
                             return 1;
@@ -580,8 +583,8 @@ int runMainMenu(struct Driver** driverArray, int* driverCount,
                                 printf("Invalid input or input ended. Please restart the program.\n");
                                 return 1;
                             }
-                            if (newDriver.pickupDistances[i] < 0.0 ||
-                                newDriver.pickupDistances[i] > 50.0)
+                            if (!(newDriver.pickupDistances[i] >= 0.0 &&
+                                newDriver.pickupDistances[i] <= 50.0))
                             {
                                 distancesValid = 0;
                             }
