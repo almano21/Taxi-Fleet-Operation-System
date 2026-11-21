@@ -64,7 +64,7 @@ The files group related responsibilities so that changes to one area are easier 
 - Bugs fixed during the documented regression run: 0; no code defect was observed in that tested path. The sample CSV was normalized to start with zero trips and revenue.
 - Build with GCC/Make: passed.
 - Resize test: adding driver ID 3 grew capacity from 2 to 4 and retained the original records.
-- Lecturer's sequence: passed. Karl's en-route status returned after cancellation; successful completion added one trip and EUR 11.70; a repeated completion did not change totals.
+- Karl's en-route status returned after cancellation; successful completion added one trip and EUR 11.70; a repeated completion did not change totals.
 - Persistence check: passed. Restart loaded all three driver records and retained the completed-trip statistics.
 
 See `docs/R3_Test_Evidence.txt` for the observed sequence and results. These results describe the tested build and should be rerun after later source changes.
