@@ -14,6 +14,11 @@ TUDENGITAKSO is a console application for TalTech students travelling between si
 
 ## Releases
 
+### Release 1
+
+- [Checkpoint 1 submission](docs/R1/TUDENGITAKSO_Checkpoint_1_Submission.md)
+- [Release 1 scenario flowcharts](docs/R1/ScenarioFlowchart-R1.pdf)
+
 ### Release 2
 
 - [Release 2 SRS](docs/SRS-R2_Updated.docx)
