@@ -60,7 +60,7 @@ The files group related responsibilities so that changes to one area are easier 
 
 ## R3 Metrics and Checks
 
-- C functions: 22, including `main`.
+- C functions: 19, including `main`.
 - Bugs fixed during the documented regression run: 0; no code defect was observed in that tested path. The sample CSV was normalized to start with zero trips and revenue.
 - Build with GCC/Make: passed.
 - Resize test: adding driver ID 3 grew capacity from 2 to 4 and retained the original records.
