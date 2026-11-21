@@ -21,18 +21,18 @@ TUDENGITAKSO is a console application for TalTech students travelling between si
 
 ### Release 2
 
-- [Release 2 SRS](docs/SRS-R2_Updated.docx)
-- [Release 2 flowchart](docs/ScenarioFlowchart-R2%20_Updated.pdf)
-- [Release 2 booking/payment test evidence](docs/TUDENGITAKSO_R2_Test_Evidence_2026-10-21.txt)
-- [Release 2 fleet test evidence](docs/TUDENGITAKSO_R2_Fleet_Test_Evidence_2026-10-21.txt)
+- [Release 2 SRS](docs/R2/SRS-R2_Updated.docx)
+- [Release 2 flowchart](docs/R2/ScenarioFlowchart-R2%20_Updated.pdf)
+- [Release 2 booking/payment test evidence](docs/R2/TUDENGITAKSO_R2_Test_Evidence_2026-10-21.txt)
+- [Release 2 fleet test evidence](docs/R2/TUDENGITAKSO_R2_Fleet_Test_Evidence_2026-10-21.txt)
 - `docs/Code.c` is the Release 2 single-file implementation.
 
 ### Release 3
 
 R3 separates the program into C modules built with a Makefile. It saves driver records and completed trips in CSV text files and uses a dynamically allocated driver array that grows when full.
 
-- [Release 3 SRS](docs/SRS-R3_Updated.docx)
-- [Release 3 test evidence](docs/R3_Test_Evidence.txt)
+- [Release 3 SRS](docs/R3/SRS-R3_Updated.docx)
+- [Release 3 test evidence](docs/R3/R3_Test_Evidence.txt)
 
 ## Build and Run
 
