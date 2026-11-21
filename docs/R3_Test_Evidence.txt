@@ -1,0 +1,19 @@
+TUDENGITAKSO Release 3 Verification Evidence
+
+Build
+Command: make clean && make
+Observed: All six C modules compiled and linked successfully with GCC. No compiler warnings or errors were printed.
+
+Resize and lecturer-requested trip sequence
+1. Started with the default Karl and Gustavo records.
+2. Added Mari as driver ID 3. The program reported capacity growth from 2 to 4.
+3. Set Karl to status 2 (en route), Gustavo to status 3 (unavailable), and Mari to status 3.
+4. Booked from TalTech Main Building (1) to Tallinn Airport (5). Karl was assigned. The trip distance was 9.2 km and fare was EUR 11.70.
+5. Simulated payment failure and cancelled. Cancellation succeeded and no payment was taken.
+6. Booked the same route again. Karl was assigned. Successful simulated payment started the trip.
+7. Completed the trip. The program reported completion.
+8. Attempted completion again. The program reported that there was no current trip.
+9. The report showed 1 completed trip and EUR 11.70 total revenue; Karl showed 1 trip and EUR 11.70. Gustavo and Mari remained at 0 trips and EUR 0.00.
+10. Exited and restarted. The program loaded 3 drivers from drivers.csv. The saved CSV retained all driver records and Karl's statistics. trip_log.csv contained the completed trip once.
+
+Result: All checks listed above passed in this run.
